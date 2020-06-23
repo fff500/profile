@@ -1,0 +1,248 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #adadad;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 360px;
+}
+
+.back-button {
+    position: absolute;
+    z-index: 2;
+    top: 16px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('../images/back-button.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.button--small {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    color: #848484;
+}
+
+.button--small:hover {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.button--small .button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+
+.button--small .button-icon svg {
+    fill: #848484;
+}
+
+.button--small:hover .button-icon svg {
+    fill: #ffffff;
+}
+
+.button--bordered {
+    display: inline-block;
+    margin-bottom: 24px;
+    width: 100%;
+    padding: 14px 0 15px;
+    border: 1px solid #848484;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #848484;
+}
+
+.button--round {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    background-image: url('../images/like-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 26px;
+}
+
+.parameters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.parameters-list__item {
+    margin: 0 4px 8px;
+}
+
+.swiper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    font-size: 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-custom-pagination {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1.5px;
+    padding: 0 16px;
+    width: auto;
+}
+
+.swiper-pagination-item {
+    margin: 0 1.5px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.swiper-pagination-item.active {
+    background-color: #ffffff;
+}
+
+.swiper-pagination-item:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+.swiper-pagination-item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+.info {
+    position: relative;
+    z-index: 2;
+    top: -38px;
+    padding: 16px 16px 32px;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+}
+
+.main-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-info .verified-status {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.main-info .name-age {
+    margin: 0 8px 0 0;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.main-info .online-status {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #10B56B;
+}
+
+.self-introduction {
+    margin: 0 0 20px 0;
+    line-height: 20px;
+}
+
+.extended-info-title {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.social-info {
+    margin-bottom: 24px;
+    padding-left: 6px;
+}
+
+.profile-info-list {
+    margin-bottom: 36px;
+}
+
+.profile-info-list__item {
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.profile-info-list__question {
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #848484;
+}
+
+.profile-info-list__item:nth-child(1) .profile-info-list__question,
+.profile-info-list__item:nth-child(2) .profile-info-list__question,
+.profile-info-list__item:nth-child(3) .profile-info-list__question {
+    margin-bottom: 4px;
+}
+
+.profile-info-list__answer {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.profile-info-list__answer--icon {
+    display: flex;
+}
+
+.profile-info-list__answer--icon .answer-icon {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.action-buttons {
+    text-align: center;
+}
